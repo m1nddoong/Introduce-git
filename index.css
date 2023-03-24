@@ -1,37 +1,107 @@
+.header {
+    background-color: #eae7db;
+}
+
+body {
+    background-color: #eae7db;
+} 
+
 .profile-section {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 100px 100px;
+    margin: 50px 50px;
 }
 
 #profile-picture {
-    width: 170px;
-    margin-right: 60px;
+    width: 180px;
+    margin-right: 90px;
     border: 1px solid  black;
     transform: scale(1); 
-    border-radius: 40%
+    border-radius: 50%
 }
 
-.introduction > h1 {
+h1 {
     margin: 0px;
     font-family: monospace;
     font-size: 30px;    
 }
 
-.introduction > h2 {
+h2 {
     margin: 0px;
     font-family: monospace;
     font-size: 15px;    
 }
 
-.introduction > h2 > ul > li {
+h3 {
+    margin: 0px;
+    font-family: monospace;
+    font-size: 10px;  
+}
+
+.introduction > h2 > li {
     list-style-type: none;
     float: left;
     margin-right: 20px;
 }
 
+.introduction-2 {
+    text-align: center;
+}
+
 #check-btn { display: none; }
 #check-btn:checked ~ .menubars { display: block; } 
 .menubars { display: none; }
+
+.click {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; 
+    text-decoration: none;
+    cursor: pointer;
+}
+.blue-box{
+    width:100px;
+    height:20px;
+    background-color: #9caae4;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.red-box{
+    width:100px;
+    height:20px;
+    background-color: #f45c5c;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.yellow-box{
+    width:100px;
+    height:20px;
+    background-color: #F7D716;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.click h2:hover {
+    font-size: 1.2em;
+    opacity: 1;
+    text-shadow: 0.7px 0.7px 0.7px #000;
+}
+
+.yellow-box > h2 > li {
+    list-style-type: none;
+    float: left;
+    margin-right: 20px;
+}
+
+footer {
+    width: 100%;
+    position: absolute;  
+    bottom: 0;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
