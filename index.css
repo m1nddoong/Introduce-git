@@ -1,0 +1,37 @@
+.profile-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 100px;
+}
+
+#profile-picture {
+    width: 170px;
+    margin-right: 60px;
+    border: 1px solid  black;
+    transform: scale(1); 
+    border-radius: 40%
+}
+
+.introduction > h1 {
+    margin: 0px;
+    font-family: monospace;
+    font-size: 30px;    
+}
+
+.introduction > h2 {
+    margin: 0px;
+    font-family: monospace;
+    font-size: 15px;    
+}
+
+.introduction > h2 > ul > li {
+    list-style-type: none;
+    float: left;
+    margin-right: 20px;
+}
+
+#check-btn { display: none; }
+#check-btn:checked ~ .menubars { display: block; } 
+.menubars { display: none; }
